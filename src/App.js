@@ -1,12 +1,13 @@
 import { Route, Switch, Redirect } from "react-router-dom";
 
 import "./App.css";
+import Layout from "./components/layout/Layout";
 import Atm from "./pages/Atm";
 import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="App">
+    <Layout>
       <Switch>
         <Route path="/" exact>
           <Redirect to="/home" />
@@ -36,7 +37,7 @@ function App() {
 
         </Route> */}
       </Switch>
-    </div>
+    </Layout>
   );
 }
 
